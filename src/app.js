@@ -56,7 +56,11 @@ const appRouter = createBrowserRouter([
   ],
   errorElement: <Error/>},
 ]);
+//* rendering by using ReactDOM.createRoot
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);
+/* On render function, it'll 'replace' the content of html element with id 'root' with the
+content which we've created using React (JavaScript) */
+
 //this how we render react functional components
 // root.render(<Applayout />);

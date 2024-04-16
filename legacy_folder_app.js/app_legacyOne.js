@@ -1,4 +1,4 @@
-console.log(React); // an object
+// console.log(React); // an object
 /*
 <div id="parent">
     <div id="child"> 
@@ -17,12 +17,14 @@ we created this structure using react
 
 //createElement(type, props, ...children)
 const parent_1 = React.createElement("div",{id:"parent"},
-    [React.createElement("div",{id:"child"},
-    [React.createElement("h1",{},"I'm a h1 tag"),
-     React.createElement("h2",{},"I'm a h2 tag")]),
-     React.createElement("div",{id:"child"},
-    [React.createElement("h1",{},"I'm a h1 tag"),
-     React.createElement("h2",{},"I'm a h2 tag")])]
+    [
+     React.createElement("div",{id:"child_1"},
+     [React.createElement("h1",{id: "grandchild_1_1"},"I'm a h1 tag"),
+     React.createElement("h2",{id: "grandchild_1_2"},"I'm a h2 tag")]),
+     React.createElement("div",{id:"child_2"},
+     [React.createElement("h1",{id: "grandchild_2_1"},"I'm a h1 tag"),
+     React.createElement("h2",{id: "grandchild_2_2"},"I'm a h2 tag")])
+    ]
 );
 
 //JSX 

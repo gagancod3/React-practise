@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
     <title>Document</title>
   </head>
   <body>
@@ -21,22 +21,23 @@
 
 
     <!-- Using React CDN links  -->
-    <!-- <script
+    <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
     ></script>
     <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script> -->
-    <script type="module" src="./app.js"></script>
+    ></script>
+    <script type="module" src="./app_legacyOne.js"></script>
       
       <!-- <script>
-          /* creating element, Syntax example - createElement('h1',{ className: 'greeting' },'Hello');*/
-          // const heading = React.createElement("h1",{},"Hello World from React !");
+          //creating element, Syntax example - createElement('h1',{ className: 'greeting' },'Hello');
+
+          const heading = React.createElement("h1",{id:'heading'},"Hello World from React !");
           // using ReactDOM for rendering elements
-          // const root = ReactDOM.createRoot(document.getElementById("root"));
-          // root.render(heading);
+          const root = ReactDOM.createRoot(document.getElementById("root"));
+          root.render(heading);
     </script> -->
   </body>
 </html>
